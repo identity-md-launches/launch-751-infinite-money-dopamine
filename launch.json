@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "IMD",
+    "name": "Infinite Money Dopamine",
+    "symbol": "IMD",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "177159557114295710296101716"
+  },
+  "economics": {"poolBps":8000,"initialMarketCapWei":"5000000000000000000000","remainderTo":"0x70bcbde387539d95ffe6d43edbf7c6aa2da87a09"},
+  "notes": "IMD (src/IMD.sol) is a fixed-supply ERC-20 with no constructor arguments. Its constructor mints all 1,000,000,000 tokens with 18 decimals once to msg.sender. No application contracts or initialization calls are required. pool.initialPrice is provenance only: floor(sqrt(initialMarketCapWei / totalSupply) * 2^96), expressed with IMD as currency0. The deployer derives the actual opening price from economics.initialMarketCapWei and token.totalSupply using the deployed currency ordering."
+}
